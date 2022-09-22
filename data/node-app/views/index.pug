@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Dashboard Gamificación con Minecraft
+  p 
+    label(id="lbl_mensaje_del_mcu") Operaciones hacia el juego
+
+  p
+    input("type"="button",value="Iniciar Lluvia",id="btn_rain_on",class="btn btn-success")
+  p
+    input("type"="button",value="Parar Lluvia",id="btn_rain_off",class="btn btn-danger")    
+  p
+    input("type"="textarea",value="",id="txt_send_msg")
+    input("type"="button",value="Enviar",id="btn_send_msg",class="btn btn-success")            
+  p 
+    label Dato recibido del juego: 
+    label(id="lbl_data_from_game")

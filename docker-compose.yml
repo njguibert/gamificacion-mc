@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  gamificacion:
+    container_name: gamificacion
+    image: "node:12.22.5"
+    working_dir: /home/node/app
+    volumes:
+      - ./data/node-app:/home/node/app
+    ports:
+      - 3000:3000
+      - 4000:4000
+    command: "npm start"
